@@ -1,0 +1,146 @@
+/* Gaya Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f0e68c, #ffdab9);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: backgroundScroll 10s linear infinite;
+}
+
+/* Animasi latar belakang */
+@keyframes backgroundScroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+/* Header */
+header {
+    background: repeating-linear-gradient(45deg, #ff8c00, #ff8c00 10px, #ffa500 10px, #ffa500 20px);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid #ff7a00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Daftar Produk */
+.produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png') repeat;
+}
+
+/* Item Produk */
+.item-produk {
+    background: linear-gradient(135deg, #ffffff, #f8f8f8);
+    border: 3px dashed #ff8c00;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-produk:hover {
+    transform: rotate(-2deg) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    border-color: #ffa500;
+}
+
+/* Gambar Produk */
+.item-produk img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px dashed #ff8c00;
+    border-radius: 16px 16px 0 0;
+    transition: transform 0.4s ease;
+}
+
+.item-produk img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Judul dan Harga Produk */
+.item-produk h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #ff8c00;
+    text-transform: uppercase;
+}
+
+.item-produk p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Tombol Beli */
+.btn-beli {
+    background: linear-gradient(to right, #ff8c00, #ffa500);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-beli:hover {
+    background: linear-gradient(to left, #ff8c00, #ff7a00);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Keranjang */
+.keranjang {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: radial-gradient(circle at center, #ff8c00, #ff4500);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.8em;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.keranjang:hover {
+    background: radial-gradient(circle at center, #ff4500, #ff0000);
+}
+
+/* Footer */
+footer {
+    background: repeating-linear-gradient(135deg, #333, #333 10px, #444 10px, #444 20px);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+}
+
+/* Animasi tambahan */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+    }
+}
